@@ -224,16 +224,19 @@ section{
 }
 
 a{
-  padding: .75em;
+  padding: .75em 1.2em;
   text-decoration: none;
-  font-size: 20px;
-  color: black;
+  font-size: 18px;
+  color: #333;
+  transition: all 0.3s ease;
+  border-radius: 8px;
 }
 
 a:hover{
-  color: rgb(0, 149, 255);
-  box-shadow: 0px 0px 6px black;
-  border-radius: 15px;
+  color: #0495FF;
+  background-color: rgba(4, 149, 255, 0.1);
+  box-shadow: none;
+  border-radius: 8px;
 }
 
 /* Credit to google fonts for font used all over this portfolio website */
@@ -381,14 +384,23 @@ img{
 }
 
 .skillList h2{
-  padding: 1em;
-  margin:.5em;
-  background-color: #139dff;
-  color: white;
-  border-radius: 30px;
+  padding: 0.8em 1.5em;
+  margin: 0.5em;
+  background-color: #ffffff;
+  color: #0495FF;
+  border: 2px solid #0495FF;
+  border-radius: 12px;
   text-align: center;
-  box-shadow: 0px 0px 3px black;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  font-weight: 500;
+}
 
+.skillList h2:hover {
+  background-color: #0495FF;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(4, 149, 255, 0.2);
 }
 
 /* Contact me */
@@ -449,11 +461,22 @@ textarea{
 
 .formButton{
   border: none;
-  padding: .5em;
-  background-color: #139dff;
+  padding: 1em 2em;
+  background-color: #0495FF;
   color: white;
-  border-radius: 5px;
-  box-shadow: 0px 0px 6px black;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(4, 149, 255, 0.2);
+}
+
+.formButton:hover {
+  background-color: #0382e0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(4, 149, 255, 0.3);
 }
 
 footer{
