@@ -625,27 +625,127 @@ No media query for `xs` since this is the default */
   }
 }
 
-
 /* MEDIA QUERIES FROM LARGEST TO SMALLEST */
 /* Extra small devices (portrait phones, less than 576px) */
-/* @media (max-width: 575.98px) {
-
-} */
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 40px;
+  }
+  
+  .navBar {
+    padding: 1em;
+  }
+  
+  .links {
+    margin: 0;
+    padding: 0.5em;
+  }
+  
+  a {
+    font-size: 16px;
+    padding: 0.5em 0.8em;
+  }
+  
+  #about, #experience, #experience2 {
+    margin: 2em 1em;
+    padding: 1em;
+  }
+  
+  .experienceBox {
+    margin: 1em;
+    margin-bottom: -4em;
+  }
+  
+  .expTitle {
+    font-size: 32px;
+  }
+  
+  .pCube {
+    margin: 1em;
+  }
+  
+  .skillList h2 {
+    padding: 0.6em 1.2em;
+    font-size: 16px;
+  }
+}
 
 /* Small devices (landscape phones, less than 768px) */
-/* @media (max-width: 767.98px) {
+@media (max-width: 767.98px) {
+  section {
+    margin: 1em;
+    padding: 0.8em;
+  }
+  
+  .logoKL {
+    margin: 1em;
+  }
+  
+  .social {
+    margin: 0.5em;
+  }
+  
+  .socialLogo {
+    font-size: 40px;
+  }
+  
+  .personalImg {
+    width: 250px;
+  }
+  
+  .contactImg {
+    width: 250px;
+  }
+  
+  form {
+    width: 90%;
+    max-width: 400px;
+  }
 
-} */
+  #type {
+    /* Override the gradient on mobile with a solid, visible color */
+    background-image: none;
+    -webkit-text-fill-color: #0495FF;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    /* Ensure the text is bold enough to be visible */
+    font-weight: 700;
+  }
+}
 
 /* Medium devices (tablets, less than 992px) */
-/* @media (max-width: 991.98px) {
-
-} */
+@media (max-width: 991.98px) {
+  .projectCubes {
+    flex-direction: column;
+  }
+  
+  .pCube {
+    max-width: 90%;
+    margin: 1em auto;
+  }
+  
+  .experienceBox {
+    max-width: 80%;
+  }
+  
+  .imgWithText {
+    flex-direction: column;
+  }
+}
 
 /* Large devices (desktops, less than 1200px) */
-/* @media (max-width: 1199.98px) {
-
-} */
+@media (max-width: 1199.98px) {
+  article {
+    flex-flow: column wrap;
+  }
+  
+  .social {
+    flex-direction: row;
+  }
+  
+  .experienceBox {
+    max-width: 60%;
+  }
+}
 
 /* Extra large devices (large desktops)
 No media query since the extra-large breakpoint has no upper bound on its width */
